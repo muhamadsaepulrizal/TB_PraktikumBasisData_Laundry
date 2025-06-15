@@ -38,9 +38,9 @@ Sistem ini merupakan aplikasi web sederhana yang dibangun menggunakan **PHP** da
 ## ⚠️ Catatan
 
 - Aplikasi ini belum dilengkapi sistem login, sehingga cocok digunakan untuk lingkungan internal (admin/kasir).
-- Perlu penambahan fitur keamanan seperti **prepared statement** untuk penggunaan skala lebih luas.
+
 
 ---
 
-📌 **Project ini dibuat sebagai tugas besar untuk keperluan pembelajaran.**
+📌 **Project ini dibuat sebagai tugas besar untuk keperluan pembelajaran pada mata kuliah Praktikum Basis Data.**
 
