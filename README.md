@@ -1,41 +1,46 @@
 # TB_PraktikumBasisData_Laundry
 
-🧼 Laundry Kinclong - Sistem Manajemen Transaksi Laundry
-Sistem ini merupakan aplikasi berbasis web sederhana yang dibuat menggunakan PHP dan MySQL, dirancang untuk membantu admin/operator laundry dalam mengelola transaksi pelanggan, mencatat jenis layanan, berat cucian, hingga status penyelesaian cucian.
+# 🧼 Laundry Admin - Sistem Manajemen Transaksi Laundry
 
-✨ Fitur Utama:
-Tambah transaksi pelanggan (nama, layanan, berat, harga)
+Sistem ini merupakan aplikasi web sederhana yang dibangun menggunakan **PHP** dan **MySQL**, dirancang khusus untuk membantu **admin atau operator laundry** dalam mencatat dan mengelola transaksi layanan laundry harian.
 
-Edit dan update data transaksi
+## ✨ Fitur Utama
 
-Tandai status transaksi sebagai "Selesai"
+- ✅ Tambah data transaksi pelanggan
+- ✅ Hitung otomatis harga berdasarkan jenis layanan dan berat
+- ✅ Edit transaksi yang sudah ada
+- ✅ Tandai transaksi sebagai "Selesai"
+- ✅ Pindahkan transaksi selesai ke riwayat
+- ✅ Tampilkan daftar riwayat transaksi
+- ✅ Hapus transaksi dari riwayat satu per satu atau sekaligus
 
-Pindahkan transaksi selesai ke riwayat
+## 🛠 Teknologi yang Digunakan
 
-Tampilkan dan kelola riwayat transaksi
+- PHP (native)
+- MySQL / MariaDB
+- Bootstrap 5 (untuk tampilan responsif)
+- phpMyAdmin (opsional, untuk pengelolaan database)
 
-Hapus satu atau seluruh riwayat
+## 📁 Struktur File
 
-🛠 Teknologi yang Digunakan:
-PHP (Plain)
+| File / Folder             | Fungsi                                                                 |
+|---------------------------|------------------------------------------------------------------------|
+| `index.php`               | Halaman utama, tambah & tampilkan transaksi aktif                     |
+| `edit.php`                | Edit data transaksi                                                    |
+| `selesai.php`             | Tandai transaksi sebagai selesai                                       |
+| `hapus.php`               | Pindahkan transaksi selesai ke `riwayat_transaksi`                     |
+| `riwayat.php`             | Lihat dan kelola transaksi yang sudah selesai                          |
+| `hapus_final.php`         | Hapus transaksi riwayat secara permanen                                |
+| `bersihkan_riwayat.php`   | Hapus semua riwayat transaksi sekaligus                                |
+| `db.php`                  | Konfigurasi koneksi database                                           |
+| `laundry_db.sql`          | File SQL untuk membuat struktur dan data awal database                 |
 
-MySQL / MariaDB
+## ⚠️ Catatan
 
-Bootstrap 5 (untuk tampilan UI)
+- Aplikasi ini belum dilengkapi sistem login, sehingga cocok digunakan untuk lingkungan internal (admin/kasir).
+- Perlu penambahan fitur keamanan seperti **prepared statement** untuk penggunaan skala lebih luas.
 
-phpMyAdmin (opsional, untuk manajemen database)
+---
 
-📁 Struktur Folder:
-index.php — Halaman utama, tambah & lihat transaksi
+📌 **Project ini dibuat sebagai tugas besar untuk keperluan pembelajaran.**
 
-edit.php — Form edit data transaksi
-
-selesai.php — Tandai transaksi selesai
-
-hapus.php — Pindahkan transaksi selesai ke riwayat
-
-riwayat.php — Lihat dan hapus riwayat transaksi
-
-hapus_final.php, bersihkan_riwayat.php — Hapus data riwayat
-
-db.php — Koneksi ke database
