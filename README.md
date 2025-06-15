@@ -38,6 +38,9 @@ Sistem ini merupakan aplikasi web sederhana yang dibangun menggunakan **PHP** da
 ## ⚠️ Catatan
 
 - Aplikasi ini belum dilengkapi sistem login, sehingga cocok digunakan untuk lingkungan internal (admin/kasir).
+- ❗ **Catatan penting:**  
+  Default port MySQL pada XAMPP umumnya adalah `3306`, **namun pada proyek ini menggunakan port `8111` karena beberapa alasan**.  
+  Pastikan Anda menyesuaikan pengaturan port database Anda jika ingin menjalankan proyek ini secara lokal. 
 
 
 ---
